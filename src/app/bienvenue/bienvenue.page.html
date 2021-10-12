@@ -1,0 +1,40 @@
+<ion-content>
+  
+  <ion-app>
+    <ion-menu side="start" content-id="main-content">
+      <ion-header>
+        <ion-toolbar translucent>
+          
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+            
+            <ion-button expand="block" routerLink="/apprenant">
+              <ion-icon name="people-outline"></ion-icon>
+              Liste Apprenant
+            </ion-button>
+          <ion-button expand="block" routerLink="/login">
+            <ion-icon name="log-out-outline"></ion-icon>
+            Deconnexion
+          </ion-button>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-label>Bienvenue {{prenom}}</ion-label>
+        <ion-datetime dispalyFormat="DD-MM-YYYY" [(ngModel)]="myDate">{{myDate}}</ion-datetime>
+      </ion-content>
+    </div>
+  </ion-app>
+</ion-content>

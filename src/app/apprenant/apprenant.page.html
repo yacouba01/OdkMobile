@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>apprenant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-title size="large"><h1>La liste des apprenants</h1></ion-title>
+  <ion-item *ngFor="let liste of listes;">
+    <ion-label><h2>{{liste.prenom}} {{liste.nom}} {{liste.apprenantStatut}}</h2></ion-label>
+  </ion-item>
+</ion-content>
